@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(graphqlEndpoint, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'access-control-allow-origin': '*'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             query: `
