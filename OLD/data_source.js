@@ -1,12 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const corsProxy = 'https://cors-anywhere.herokuapp.com/';
-    const graphqlEndpoint = 'https://imchatgptcustomaction.azurewebsites.net/graphql';
 
-    fetch(corsProxy + graphqlEndpoint, {
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('https://imchatgptcustomaction.azurewebsites.net/graphql', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
-            'access-control-allow-origin': '*'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify({
             query: `
